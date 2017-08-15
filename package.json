@@ -1,0 +1,22 @@
+{
+  "name": "brighton-stock",
+  "version": "1.0.0",
+  "description": "Brighton Stock Community Hub",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackbliss99/brighton-stock.git"
+  },
+  "author": "Jack Bliss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackbliss99/brighton-stock/issues"
+  },
+  "homepage": "https://github.com/jackbliss99/brighton-stock#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
