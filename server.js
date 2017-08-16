@@ -6,7 +6,7 @@ const app = express();
 const redis = require('redis').createClient(process.env.REDIS_URL);
 const wwwhisper = require('connect-wwwhisper');
 
-app.use('/admin_page', wwwhisper());
+app.use(wwwhisper());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './dist')));
 
@@ -59,8 +59,8 @@ app.get('/admin', (req, res) => {
 app.get('/admin_age', (req, res) => {
     res.sendFile(__dirname + '/dist/admin.html');
 });
-/*app.get('*', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(__dirname + '/dist/404.html');
-});*/
+});
 
 app.listen(port, () => console.log('Listening on port', port));
