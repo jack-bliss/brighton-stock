@@ -59,8 +59,8 @@ app.get('/admin', (req, res) => {
 app.get('/admin_age', (req, res) => {
     res.sendFile(__dirname + '/dist/admin.html');
 });
-app.get('*', (req, res) => {
+/*app.get('*', (req, res) => {
     res.sendFile(__dirname + '/dist/404.html');
-});
+});*/
 
 app.listen(port, () => console.log('Listening on port', port));
