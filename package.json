@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/jackbliss99/brighton-stock#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "body-parser": "^1.17.2",
+    "connect-wwwhisper": "*",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "redis": "^2.8.0"
   }
 }
