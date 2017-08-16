@@ -6,7 +6,8 @@ const app = express();
 const redis = require('redis').createClient(process.env.REDIS_URL);
 const wwwhisper = require('connect-wwwhisper');
 
-app.use(wwwhisper());
+app.use('/admin', wwwhisper());
+app.use('/wwwhisper', wwwhisper());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './dist')));
 
