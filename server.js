@@ -3,7 +3,6 @@ const path = require('path');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const app = express();
-const redis = require('redis').createClient(process.env.REDIS_URL);
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './dist')));
