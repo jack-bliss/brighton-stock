@@ -19,6 +19,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "connect-wwwhisper": "*",
+    "contentful": "^4.6.1",
     "express": "^4.15.4",
     "moment": "^2.18.1",
     "redis": "^2.8.0"
